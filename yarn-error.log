@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.26.35:443 - Local (0.0.0.0:49195)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at emitLookup (node:net:1323:9)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:103587:28
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:103496:13
+      at module.exports.RawTask.call (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:79584:19)
+      at flush (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:79666:29)
+      at processTicksAndRejections (node:internal/process/task_queues:77:11)
+      at runNextTicks (node:internal/process/task_queues:64:3)
+      at process.processImmediate (node:internal/timers:447:9)
+
+npm manifest: 
+  {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "autoprefixer": "10.4.14",
+      "eslint": "8.41.0",
+      "eslint-config-next": "13.4.4",
+      "next": "13.4.4",
+      "postcss": "8.4.23",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "tailwindcss": "3.3.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
